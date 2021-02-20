@@ -98,9 +98,12 @@
             if (!(response.ok)) {
               output.textContent = "error: " + response.status;
             } else {
-              output.textContent = JSON.stringify(data);
+              return response.json();
             }
-            return response.json();
+          })
+        
+          .then(data => {
+            output.textContent = JSON.stringify(data);
           })
         
           .catch(function(err) {
@@ -128,9 +131,12 @@
             if (!(response.ok)) {
               output.textContent = "error: " + response.status;
             } else {
-              output.textContent = JSON.stringify(data);
+              return response.json();
             }
-            return response.json();
+          })
+        
+          .then(data => {
+            output.textContent = JSON.stringify(data);
           })
         
           .catch(function(err) {
@@ -170,11 +176,14 @@
               if (!(response.ok)) {
                 output.textContent = "error: " + response.status;
               } else {
-                output.textContent = JSON.stringify(data);
+                return response.json();
               }
-              return response.json();
             })
         
+            .then(data => {
+              output.textContent = JSON.stringify(data);
+            })
+          
             .catch(function(err) {
               console.log('Fetch Error :-S', err);
             });
@@ -214,9 +223,12 @@
               if (!(response.ok)) {
                 output.textContent = "error: " + response.status;
               } else {
-                output.textContent = JSON.stringify(data);
+                return response.json();
               }
-              return response.json();
+            })
+          
+            .then(data => {
+              output.textContent = JSON.stringify(data);
             })
         
             .catch(function(err) {
@@ -248,9 +260,12 @@
             if (!(response.ok)) {
               output.textContent = "error: " + response.status;
             } else {
-              output.textContent = JSON.stringify(data);
+              return response.json();
             }
-            return response.json();
+          })
+        
+          .then(data => {
+            output.textContent = JSON.stringify(data);
           })
         
           .catch(function(err) {
